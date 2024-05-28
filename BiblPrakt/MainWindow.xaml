@@ -1,0 +1,23 @@
+﻿<Window x:Class="BiblPrakt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BiblPrakt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="NameBar" Grid.Row="0" Margin="20"></TextBox>
+        <TextBox x:Name="AnimBar" Grid.Row="1" Margin="20"></TextBox>
+        <Button  x:Name="Serializer" Margin="20" Grid.Row="2" Content="Сериализую" Click="Serializer_Click"></Button>
+        <Button x:Name="Deserialiser" Margin="20" Grid.Row="3" Content="Десериализую" Click="Deserialiser_Click"></Button>
+        <Button x:Name="Changer" Margin="20" Grid.Row="4" Content="Поменяю тебе тему" Click="Changer_Click"></Button>
+    </Grid>
+</Window>
